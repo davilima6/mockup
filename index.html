@@ -1294,6 +1294,37 @@ function($action, response, options) { ... }
 </div>
   </script>
 
+  <!--  **** Galleria **** -->
+  <style>
+    #galleria { width: 420px; height: 240px; background: #000 }
+  </style>
+  <script>
+    addPattern({
+      id: 'galleria',
+      title: 'Galleria',
+      description: 'A Galleria.io carousel widget.',
+      attributes: [
+        {attribute: 'autoplay', type: 'Integer', description: 'Sets Galleria to play slideshow when initialized.'},
+        {attribute: 'carousel', type: 'Boolean', description: 'Toggle the creation of a carousel.'},
+        {attribute: 'transition', type: 'String', description: 'Defines what transition to use.'},
+        {attribute: 'imageCrop', type: 'Boolean or String', description: 'Defines how the main image will be cropped inside its container.'}
+      ]
+    });
+  </script>
+  <script type="text/template">
+    <div>
+      <h1>Galleria pattern</h1>
+      <p>This pattern takes a div with images and turns it into a Gallery.</p>
+    </div>
+  </script>
+  <script type="text/example" class="example-galleria" data-title="Galleria text">
+    <div class="pat-galleria" data-pat-galleria="autoplay: false" id="galleria">
+        <img src="placeholder.gif" />
+        <img src="placeholder.gif" />
+        <img src="placeholder.gif" />
+    </div>
+  </script>
+
   <!--  **** Prevent Double Submit **** -->
   <script>
     addPattern({

@@ -64,6 +64,8 @@ var requirejsOptions = {
     'mockup-patterns-ace': 'js/patterns/ace',
     'mockup-patterns-filemanager': 'js/patterns/filemanager/pattern',
     'mockup-patterns-tree': 'js/patterns/tree',
+    'galleria': 'bower_components/jquery-galleria/src/galleria',
+    'mockup-patterns-galleria': 'js/patterns/galleria'
   },
   shim: {
     'underscore': { exports: 'window._' },
